@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginHorizontal="20dp"
+    android:layout_gravity="center">
+
+    <FrameLayout
+        android:id="@+id/item_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginVertical="8dp">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user_pic" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom|right">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/ic_heart"/>
+
+                <TextView
+                    android:id="@+id/heart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="5dp"
+                    android:textSize="8dp"
+                    android:textColor="@color/bgWhite"
+                    android:text="0"/>
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/ic_chat"/>
+
+                <TextView
+                    android:id="@+id/chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:textSize="8dp"
+                    android:textColor="@color/bgWhite"
+                    android:text="0"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/item_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textSize="11dp"
+                android:textStyle="bold"
+                android:textColor="@color/bgWhite"
+                android:text="우리집 고양이 츄르를 좋아해"/>
+
+            <TextView
+                android:id="@+id/item_subdata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textSize="8dp"
+                android:textStyle="normal"
+                android:textColor="#4770FF"
+                android:text="테스트"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

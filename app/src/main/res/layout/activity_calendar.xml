@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".view.calendar.CalendarActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/superbold"
+            android:text="CARE 'BOUT"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:backgroundTint="#FFFFFF"
+            android:rotationX="0"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/setting"
+            tools:layout_editor_absoluteX="126dp"
+            tools:layout_editor_absoluteY="5dp"
+            android:layout_gravity="right"/>
+        <ImageButton
+            android:id="@+id/humaninfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:backgroundTint="#FFFFFF"
+            android:rotationX="0"
+            android:src="@drawable/iconoir_user"
+            tools:layout_editor_absoluteX="126dp"
+            tools:layout_editor_absoluteY="5dp"
+            android:layout_gravity="right"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            app:mcv_selectionColor="#6EC677"
+            tools:ignore="MissingConstraints" />
+
+        <!--<CalendarView
+            android:selectedWeekBackgroundColor="#6EC677"
+            android:id="@+id/calendarView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            tools:ignore="UnknownId" />-->
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="left"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="116dp"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/contextEditText"
+            app:layout_constraintTop_toBottomOf="@+id/list"
+            android:layout_marginTop="16dp"
+            android:hint="일정을 입력해주세요!"
+            android:layout_marginEnd="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/bottom_navigationview"
+            tools:ignore="NotSibling" />
+
+        <Button
+            android:id="@+id/save_Btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="50dp"
+            android:background="#6EC677"
+            android:text="저장"
+            android:visibility="invisible"
+            app:backgroundTint="#6EC677"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contextEditText"
+            tools:ignore="NotSibling" />
+
+
+        <Button
+            android:id="@+id/cha_Btn"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="8dp"
+            android:background="#6EC677"
+            android:text="수정"
+            android:visibility="invisible"
+            app:backgroundTint="#6EC677"
+            app:layout_constraintBaseline_toBaselineOf="@+id/save_Btn"
+            app:layout_constraintEnd_toStartOf="@+id/del_Btn"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/del_Btn"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="#6EC677"
+            android:text="삭제"
+            android:visibility="invisible"
+            app:backgroundTint="#6EC677"
+            app:layout_constraintBaseline_toBaselineOf="@+id/cha_Btn"
+            app:layout_constraintEnd_toEndOf="@+id/save_Btn" />
+        <Button
+            android:id="@+id/can_Btn"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="#6EC677"
+            android:text="취소"
+            android:visibility="invisible"
+            app:backgroundTint="#6EC677"
+            app:layout_constraintBaseline_toBaselineOf="@+id/save_Btn"
+            app:layout_constraintEnd_toEndOf="@+id/save_Btn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include layout="@layout/bottom_tap"
+        android:id="@id/bottomTapBarOuter"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+
+<!--        android:id="@+id/bottom_navigationview"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:gravity="bottom"-->
+<!--        app:itemBackground="@color/white"-->
+<!--        app:itemIconSize="33dp"-->
+<!--        app:itemPaddingBottom="1dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:labelVisibilityMode="labeled"-->
+<!--        app:itemIconTint="@color/color_check"-->
+<!--        app:itemTextColor="@color/color_check"-->
+<!--        app:menu="@menu/bottom_menu" />-->
+
+</LinearLayout>

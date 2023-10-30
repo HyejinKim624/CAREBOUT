@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/black</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+
+    <style name="expandedBarTextStyle">
+        <item name="android:textSize">23dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#C1BEBE</item>
+    </style>
+
+    <style name="TabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabGravity">start</item>
+        <item name="tabIndicatorColor">#6EC677</item>
+        <item name="tabIndicatorFullWidth">true</item>
+        <item name="tabIndicatorGravity">bottom</item>
+        <item name="tabMode">fixed</item>
+        <item name="tabBackground">@color/white</item>
+        <item name="tabTextColor">#80000000</item>
+        <item name="tabSelectedTextColor">#000000</item>
+        <item name="tabRippleColor">@android:color/transparent</item>
+    </style>
+
+    <style name="tabTextSizeBold" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="NavigationBar">
+        <item name="tabGravity">fill</item>
+        <item name="tabIndicatorFullWidth">true</item>
+        <item name="tabMode">fixed</item>
+        <item name="tabTextColor">#959AA3</item>
+        <item name="tabSelectedTextColor">#6EC677</item>
+        <item name="tabRippleColor">@android:color/transparent</item>
+    </style>
+
+</resources>

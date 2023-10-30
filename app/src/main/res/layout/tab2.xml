@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/tab_frame_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ToggleButton
+            android:id="@+id/junggiGumjin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="#기초"
+            android:textOff="#기초"
+            android:textOn="#기초" />
+
+        <ToggleButton
+            android:id="@+id/cold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@+id/junggiGumjin"
+            android:text="#정기"
+            android:textOff="#정기"
+            android:textOn="#정기" />
+
+        <RelativeLayout
+            android:id="@+id/tableBG"
+            android:layout_width="wrap_content"
+            android:layout_height="637dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="83dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="11dp"
+            android:background="#F5FCF6">
+
+            <TableLayout
+                android:id="@+id/innoTableLay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:id="@+id/innoTableRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/mediName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="접종 날짜"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/gumjinName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="접종 항목"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/hName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="예정일"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+            </TableLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

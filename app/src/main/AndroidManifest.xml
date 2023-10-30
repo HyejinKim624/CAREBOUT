@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools" >
 
     <application
         android:allowBackup="true"
@@ -10,17 +10,55 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.CareBout"
-        tools:targetApi="31">
+        tools:targetApi="31" >
         <activity
-            android:name=".MainActivity"
+            android:name=".view.home.HomeActivity"
             android:exported="true"
-            android:label="@string/app_name">
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".view.IntroActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".view.calendar.CalendarActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".view.medical.MedicalActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".view.community.CommunityActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".view.medical.Todo.TodoReadActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".view.medical.Inoc.InoculationReadActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".view.medical.Medicine.MedicineReadActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".view.medical.Clinic.ClinicReadActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".view.medical.Todo.TodoWriteActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".view.medical.Inoc.InoculationWriteActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".view.medical.Medicine.MedicineWriteActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".view.medical.Clinic.ClinicWriteActivity"
+            android:exported="false"/>
+
     </application>
 
 </manifest>

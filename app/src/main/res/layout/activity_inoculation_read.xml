@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inoc.InoculationReadActivity"
+    android:id="@+id/parent_layout">
+
+    <LinearLayout
+        android:id="@+id/tag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:layout_marginRight="10dp"
+            android:id="@+id/toggle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기초"
+            android:textOn="기초"
+            android:textOff="기초"
+
+            android:background="@drawable/togglebtn_check"/>
+
+        <ToggleButton
+            android:layout_marginRight="10dp"
+            android:id="@+id/toggle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="정기"
+            android:textOn="정기"
+            android:textOff="정기"
+            android:background="@drawable/togglebtn_check"
+            />
+
+    </LinearLayout>
+
+<!--    &lt;!&ndash;구분선&ndash;&gt;-->
+<!--    <View-->
+<!--        android:id="@+id/line"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:layout_marginHorizontal="10dp"-->
+<!--        android:background="#262626"-->
+<!--        android:layout_below="@+id/tag_layout"/>-->
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tag_layout"
+
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tag_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="태그"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <!--상태 메시지-->
+        <TextView
+            android:id="@+id/date_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:maxLines="1"
+            android:text="접종일"
+            android:textColor="#444"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/due_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:maxLines="1"
+            android:text="예정일"
+            android:textColor="#444"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/hospital_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:maxLines="1"
+            android:text="병원"
+            android:textColor="#444"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/etc_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="비고"
+            android:textColor="#444"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!--구분선-->
+    <View
+        android:id="@+id/lineView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="#262626"
+        android:layout_below="@+id/title_layout"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineView"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/insert_btn"
+        android:contentDescription="+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/main_color"
+        android:tint="@color/white"
+        android:src="@drawable/ic_add"
+        />
+
+</RelativeLayout>

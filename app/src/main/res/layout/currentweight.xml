@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="21.5dp"
+    android:layout_marginTop="12.5dp">
+
+    <ImageView
+        android:id="@+id/dogImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dogbow" />
+
+    <TextView
+        android:id="@+id/feedAmount"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:text="종이컵 n/n"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/dogImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/weight"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="7dp"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dogImage" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:text="KG"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/weight"
+        app:layout_constraintTop_toBottomOf="@+id/feedAmount" />
+</androidx.constraintlayout.widget.ConstraintLayout>

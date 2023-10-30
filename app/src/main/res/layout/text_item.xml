@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="50dp"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/element_text"
-        android:textSize="12dp"
-        android:textAlignment="center"
-        android:gravity="center"/>
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/inspection"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="test"
+            android:textSize="12dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="00.00"
+            android:textSize="10dp"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
 </FrameLayout>

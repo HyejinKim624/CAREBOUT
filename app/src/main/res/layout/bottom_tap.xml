@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomTapBar"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/goToHome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="홈"
+        android:background="@color/transparent"/>
+    <Button
+        android:id="@+id/goToCalendar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="캘린더"
+        android:background="@color/transparent"/>
+    <Button
+        android:id="@+id/goToMedical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="의료"
+        android:background="@color/transparent"/>
+    <Button
+        android:id="@+id/goToCommunity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="커뮤니티"
+        android:background="@color/transparent"/>
+
+</LinearLayout>

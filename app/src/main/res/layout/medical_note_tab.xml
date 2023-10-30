@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/dailycareBG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="13dp"
+                android:background="@drawable/tab_radius">
+
+                <TextView
+                    android:id="@+id/dailycareMainText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="데일리 케어"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:id="@+id/dailycareFrame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dailycareMainText"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+                <RelativeLayout
+                    android:id="@+id/mediing"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginBottom="13dp"
+                    android:layout_toEndOf="@+id/currentWeight"
+                    android:background="@drawable/tab_radius">
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/currentWeight"
+                    android:layout_width="168dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="13dp"
+                    android:background="@drawable/tab_radius">
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="447dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:background="#FFFFFF">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:tabBackground="@drawable/tabs_shape"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="#6EC677"
+                    app:tabIndicatorGravity="bottom"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextColor="#6EC677"
+                    app:tabTextColor="#80000000">
+
+                    <com.google.android.material.tabs.TabItem
+                        android:id="@+id/tab1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="진료기록" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:id="@+id/tab2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="접종/구충" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:id="@+id/tab3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="약 처방" />
+                </com.google.android.material.tabs.TabLayout>
+
+                <FrameLayout
+                    android:id="@+id/frame1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tabs"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#FFFFFF"></FrameLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

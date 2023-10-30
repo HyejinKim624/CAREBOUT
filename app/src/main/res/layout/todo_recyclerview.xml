@@ -1,0 +1,54 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="20dp">
+
+        <!--이름-->
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="할 일"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:gravity="center"/>
+
+        <!--상태 메시지-->
+        <TextView
+            android:id="@+id/count_text"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="횟수"
+            android:textSize="16sp"
+            android:textColor="#444"
+            android:maxLines="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/etc_text"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="비고"
+            android:textSize="16sp"
+            android:textColor="#444"
+            android:gravity="left"/>
+    </LinearLayout>
+
+    <!--구분선-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="#777777"/>
+
+</LinearLayout>

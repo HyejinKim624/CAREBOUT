@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#F9F9F9">
+
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle" android:padding="10dp">
+            <!-- 버튼 색깔 -->
+            <solid android:color="@color/main_color"/>
+            <!-- 네 귀퉁이 모양 -->
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle" android:padding="10dp">
+            <!-- 버튼 색깔 -->
+            <solid android:color="#F9F9F9"/>
+            <!-- 네 귀퉁이 모양 -->
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+
+<!--    <item>-->
+<!--        &lt;!&ndash; 기본 상태일 때 배경 색을 투명으로 설정합니다. &ndash;&gt;-->
+<!--        <color android:color="@android:color/transparent"/>-->
+<!--    </item>-->
+</ripple>

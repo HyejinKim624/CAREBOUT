@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_main_setting"
+        android:title="설정"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_logout"
+        android:title="logout"
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_lock_power_off" />
+
+</menu>
